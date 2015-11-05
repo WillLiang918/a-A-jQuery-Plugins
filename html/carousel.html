@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel!!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://placecorgi.com/javascripts/jquery.placecorgi.js"></script>
+    <script src="../js/carousel.js"></script>
+    <link href="../css/carousel.css" rel="stylesheet" type="text/css" />
+    </script>
+  </head>
+  <body>
+    <figure class="carousel">
+      <ul class="items group">
+        <li><img src="http://outdoorchannel.com/content/articles/boatus-dog.jpg" /></li>
+        <li><img src="http://www.worthashare.com/assets/big-savannah-cat-12.jpg" /></li>
+        <li><img src="http://schedule.wttw.com/ulphoto/wttw_1342552647.jpg" /></li>
+        <li><img src="https://blogtmssl-templatemonster.netdna-ssl.com/wp-content/uploads/2014/06/Hipster-cat-800x400.jpg?37c8fc" /></li>
+        <li><img src="http://sausagedoghotel.com/wp-content/uploads/2012/09/267250_10152112563320357_1247490408_n.jpg" /></li>
+      </ul>
+        <button class="slide-left">Prev</button>
+        <button class="slide-right">Next</button>
+    </figure>
+    <script>
+      $(function() {
+        $('body').placecorgi();
+      });
+
+      $(function() {
+        $('.carousel').carousel();
+      });
+
+    </script>
+  </body>
+</html>

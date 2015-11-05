@@ -1,0 +1,69 @@
+html, body, ul, li, div, figure, article, section, h1, p, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+figure {
+  display: block;
+  margin: auto;
+  width: 500px;
+}
+
+.group:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tabs {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.tabs .active {
+  font-weight: bold;
+}
+
+.tabs li {
+  float: left;
+}
+
+.tabs a {
+  display: block;
+  padding: 20px;
+}
+
+article {
+  display: none;
+  background-color: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+article.active {
+  display: block;
+  transition: opacity 500ms linear;
+}
+
+article.transitioning {
+  transition: opacity 500ms linear;
+  display: block;
+  opacity: 0;
+}

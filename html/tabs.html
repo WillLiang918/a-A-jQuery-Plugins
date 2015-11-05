@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabs Are GREAT!!!!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../js/tabs.js"></script>
+    <link href="../css/tabs.css" rel="stylesheet" type="text/css" />
+    </script>
+  </head>
+  <body>
+    <figure>
+    <ul class="tabs group" data-content-tabs='{ "Location": ".content-tabs" }' >
+      <li>
+        <a class="active" href="#husky">Husky</a>
+      </li>
+      <li>
+        <a href="#corgi">Corgi</a>
+      </li>
+      <li>
+        <a href="#great-dane">Great-Dane</a>
+      </li>
+    </ul>
+    <section class="content-tabs group">
+      <article class ="active" id="husky">
+        <p>
+          Husky /ˈhʌski/ is a general name for a type of dog used to pull sleds in northern regions, differentiated from other sled-dog types by their fast pulling style.[1] They are "an ever-changing cross-breed of the...fastest dogs."[1] The Alaskan Malamute, by contrast, is "the largest and most powerful" sled dog,[2] and was used for heavier loads. Huskies are used in sled dog racing. In recent years, companies have been marketing tourist treks with dog sledges for adventure travelers in snow regions as well.[3] Huskies are also today kept as pets, and groups work to find new pet homes for retired racing and adventure trekking dogs.[4]
+        </p>
+      </article>
+      <article id="corgi">
+        <p>
+          The Pembroke Welsh Corgi (/ˈkɔrɡi/; Welsh for "dwarf dog"), is a herding dog breed, which originated in Pembrokeshire, Wales.[1] It is one of two breeds known as Welsh Corgi: the other is the Cardigan Welsh Corgi. They descend from the line that is the northern spitz-type dog (examples include that of the Siberian Husky).[2] The Pembroke Welsh Corgi is the younger of the two Corgi breeds and is a separate and distinct breed[3] from the Cardigan.[1] The corgi is one of the smallest dogs in the Herding Group. Pembroke Welsh Corgis are famed for being the preferred breed of Queen Elizabeth II, who has owned more than 30 during her reign.[4] These dogs have been favored by British royalty for more than seventy years.
+
+The Pembroke Welsh Corgi has been ranked at #11 in Stanley Coren's The Intelligence of Dogs, and is thus considered an excellent working dog. The Pembroke Welsh Corgi was ranked as the 25th most popular dog in 2011.[5]
+        </p>
+      </article>
+      <article id="great-dane">
+        <p>
+          The Great Dane is a large German breed of domestic dog (Canis lupus familiaris) known for its enormous body and great height. The German name of the breed is Deutsche Dogge, or German mastiff.
+
+The Great Dane is one of the world's tallest dog breeds. The world record holder for tallest dog was a Great Dane called Zeus (died September 2014; aged 5), who measured 112 cm (44 in) from paw to shoulder. Great Danes are known for seeking physical affection from their owners.
+        </p>
+      </article>
+    </section>
+    </figure>
+
+    <script>
+    // debugger
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>
